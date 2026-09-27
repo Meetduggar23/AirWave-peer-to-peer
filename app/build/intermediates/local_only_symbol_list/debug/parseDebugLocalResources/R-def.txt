@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+color ble_chat_primary
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id chatLog
+id chatScroll
+id deviceNameEdit
+id messageEdit
+id peersList
+id sendButton
+id startButton
+id statusText
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.BLEChat

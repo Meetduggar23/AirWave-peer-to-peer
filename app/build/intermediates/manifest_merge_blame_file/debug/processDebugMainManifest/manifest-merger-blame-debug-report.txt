@@ -1,0 +1,164 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.blechat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Legacy Bluetooth permissions (API <= 30) -->
+12    <uses-permission
+12-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:5:5-95
+13        android:name="android.permission.BLUETOOTH"
+13-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:5:22-65
+14        android:maxSdkVersion="30" />
+14-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:5:66-92
+15    <uses-permission
+15-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:6:5-101
+16        android:name="android.permission.BLUETOOTH_ADMIN"
+16-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:6:22-71
+17        android:maxSdkVersion="30" />
+17-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:6:72-98
+18    <!-- Modern Bluetooth permissions (API 31+) -->
+19    <uses-permission
+19-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:8:5-9:58
+20        android:name="android.permission.BLUETOOTH_SCAN"
+20-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:8:22-70
+21        android:usesPermissionFlags="neverForLocation" />
+21-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:9:9-55
+22    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+22-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:10:5-78
+22-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:10:22-75
+23    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+23-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:11:5-76
+23-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:11:22-73
+24    <!-- Location is only needed for BLE scanning on API <= 30 -->
+25    <uses-permission
+25-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:13:5-14:38
+26        android:name="android.permission.ACCESS_FINE_LOCATION"
+26-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:13:22-76
+27        android:maxSdkVersion="30" />
+27-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:14:9-35
+28
+29    <uses-feature
+29-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:16:5-90
+30        android:name="android.hardware.bluetooth_le"
+30-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:16:19-63
+31        android:required="true" />
+31-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:16:64-87
+32
+33    <permission
+33-->[androidx.core:core:1.13.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\68f2668ec1832bb3ce369a1bc559b540\workspace\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+34        android:name="com.example.blechat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.13.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\68f2668ec1832bb3ce369a1bc559b540\workspace\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.13.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\68f2668ec1832bb3ce369a1bc559b540\workspace\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+36
+37    <uses-permission android:name="com.example.blechat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+37-->[androidx.core:core:1.13.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\68f2668ec1832bb3ce369a1bc559b540\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.13.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\68f2668ec1832bb3ce369a1bc559b540\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+38
+39    <application
+39-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:18:5-32:19
+40        android:allowBackup="true"
+40-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:19:9-35
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.13.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\68f2668ec1832bb3ce369a1bc559b540\workspace\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+42        android:debuggable="true"
+43        android:extractNativeLibs="false"
+44        android:icon="@mipmap/ic_launcher"
+44-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:20:9-43
+45        android:label="@string/app_name"
+45-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:22:9-41
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:21:9-54
+47        android:theme="@style/Theme.BLEChat" >
+47-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:23:9-45
+48        <activity
+48-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:24:9-31:20
+49            android:name="com.example.blechat.MainActivity"
+49-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:25:13-41
+50            android:exported="true" >
+50-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:26:13-36
+51            <intent-filter>
+51-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:27:13-30:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:28:17-69
+52-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:28:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:29:17-77
+54-->C:\Users\Meet duggar\AndroidStudioProjects\ble-chat\app\src\main\AndroidManifest.xml:29:27-74
+55            </intent-filter>
+56        </activity>
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\085409e9677c673691583787231ea500\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\085409e9677c673691583787231ea500\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+60            android:authorities="com.example.blechat.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\085409e9677c673691583787231ea500\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\085409e9677c673691583787231ea500\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+62            <meta-data
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\085409e9677c673691583787231ea500\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\085409e9677c673691583787231ea500\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+64                android:value="androidx.startup" />
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\085409e9677c673691583787231ea500\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\00a706e6ba766a37d97ee9a49fbf62ee\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\00a706e6ba766a37d97ee9a49fbf62ee\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\00a706e6ba766a37d97ee9a49fbf62ee\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+70                android:value="androidx.startup" />
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+71        </provider>
+72
+73        <receiver
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+74            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+75            android:directBootAware="false"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+76            android:enabled="true"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+77            android:exported="true"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+78            android:permission="android.permission.DUMP" >
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+80                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+83                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+86                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+89                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Meet duggar\.gradle\caches\9.3.0\transforms\7be5ce268e96cfa15872a3b79cf515c8\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+90            </intent-filter>
+91        </receiver>
+92    </application>
+93
+94</manifest>

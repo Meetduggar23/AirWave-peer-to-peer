@@ -1,0 +1,4 @@
+#Fri Sep 25 10:51:49 IST 2026
+base.0=C\:\\Users\\Meet duggar\\AndroidStudioProjects\\ble-chat\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex
